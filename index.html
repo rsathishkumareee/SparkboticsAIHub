@@ -427,38 +427,84 @@
       </div>
     </div>
 
-    <form class="form" id="contactForm">
-      <div class="form-row">
-        <div class="field">
-          <label for="name">Full name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-      </div>
-      <div class="field">
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="field">
-        <label for="course">Course of interest</label>
-        <select id="course" name="course">
-          <option>Robotics Engineering</option>
-          <option>Applied Artificial Intelligence</option>
-          <option>IT Crash Courses</option>
-          <option>Not sure yet</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Tell us what you'd like to learn..."></textarea>
-      </div>
-      <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Send Message →</button>
-      <p class="form-note">Sending this opens WhatsApp with your details pre-filled, addressed to Sparkbotics AI Hub — just hit send there to complete your enquiry.</p>
-      <div class="form-success" id="formSuccess">✓ Opening WhatsApp with your enquiry — send the message there to finish.</div>
-    </form>
+   
+<form id="whatsappForm">
+  <div class="row">
+    <div class="field">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div class="field">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="field">
+    <label for="course">Course of Interest</label>
+    <select id="course" name="course">
+      <option>Robotics Engineering</option>
+      <option>Artificial Intelligence</option>
+      <option>Machine Learning</option>
+      <option>Embedded Systems</option>
+      <option>IoT & Automation</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell us what you'd like to learn..."></textarea>
+    <div class="error" id="formError">Please fill in your name and phone number.</div>
+  </div>
+
+  <button type="submit">Send Message →</button>
+
+  <div class="hint">
+    Sending this opens WhatsApp with your details pre-filled, addressed to Sparkbotics AI Hub — just hit send there to complete your enquiry.
+  </div>
+</form>
+
+<script>
+  // Destination WhatsApp number (with country code, no + or spaces)
+  const WHATSAPP_NUMBER = "919751997528"; // 91 = India country code + 9751997528
+
+  document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const fullName = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const course = document.getElementById('course').value;
+    const message = document.getElementById('message').value.trim();
+    const errorEl = document.getElementById('formError');
+
+    if (!fullName || !phone) {
+      errorEl.style.display = 'block';
+      return;
+    }
+    errorEl.style.display = 'none';
+
+    const text =
+`New Enquiry - Sparkbotics AI Hub
+
+Name: ${fullName}
+Phone: ${phone}
+Email: ${email}
+Course of Interest: ${course}
+Message: ${message || '(none)'}`;
+
+    const encodedText = encodeURIComponent(text);
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`;
+
+    window.open(url, '_blank');
+  });
+</script>
   </div>
 </section>
 
