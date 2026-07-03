@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sparkbotics AI Hub — Robotics &amp; AI Training Institute, Coimbatore</title>
+<meta name="description" content="Sparkbotics AI Hub is a robotics, artificial intelligence and STEM training institute in Vadavalli, Coimbatore. Hands-on courses in robotics, AI and IT crash courses.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav" id="siteNav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="images/logo.png" alt="SparkBotics AI Hub" class="brand-logo">
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn--ghost btn--sm">Contact Us</a>
+      <a href="#courses" class="btn btn--primary btn--sm">Enroll Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="top" >
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <!-- Signature element: animated circuit ↔ neural-network fusion -->
+  <svg class="hero-net" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#00d4ff"/>
+        <stop offset="100%" stop-color="#39ff14"/>
+      </linearGradient>
+    </defs>
+    <g id="netEdges" class="edge-group"></g>
+    <g id="netNodes"></g>
+  </svg>
+
+  <div class="wrap hero-inner" >
+    <div class="hero-copy">
+      <span class="eyebrow">Robotics · Artificial Intelligence · STEM</span>
+      <h1>Where circuits learn to <span class="accent">think</span> and code learns to <span class="accent--g">move</span>.</h1>
+      <p class="lede">Sparkbotics AI Hub is a hands-on robotics and AI training institute in Vadavalli, Coimbatore — turning curious beginners into confident builders through project-based learning.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="btn btn--primary">Enroll Now →</a>
+        <a href="#contact" class="btn btn--ghost">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>8</b><span>Live Programs</span></div>
+        <div class="hero-stat"><b>Class 3+</b><span>Foundation → Advanced</span></div>
+        <div class="hero-stat"><b>Coimbatore</b><span>Vadavalli &amp; PN Pudur</span></div>
+      </div>
+    </div>
+
+    <button class="hero-poster" id="heroPosterBtn" aria-label="View full promotional poster" style="height:650px;">
+      <img src="images/hero-poster.webp" alt="Sparkbotics AI Hub promotional poster — STEM Smart Lab: Robotics, Coding, Phonics" loading="eager" >
+      <span class="poster-zoom">🔍 View poster</span>
+    </button>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ======================= MISSION STRIP ======================= -->
+<div class="mission">
+  <div class="wrap">
+    <p>Our mission is to make <strong>robotics and AI education</strong> practical, hands-on and accessible — bridging theory with real-world projects so every learner leaves able to <strong>build, code and think like an engineer</strong>.</p>
+    <a href="#courses" class="btn btn--ghost btn--sm">View Courses</a>
+  </div>
+</div>
+
+<!-- ======================= ABOUT ======================= -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2>A robotics &amp; AI hub built for hands-on learners.</h2>
+      <p>Sparkbotics AI Hub is an educational technology institute based in Vadavalli, Coimbatore, Tamil Nadu, specialising in robotics, artificial intelligence and STEM skill development. We serve students and working professionals who want to move beyond theory into practical coding, automation and machine-building.</p>
+      <div class="location-box">
+        <span class="tag">// campuses</span><br>
+        Sparkbotics AI Hub<br>
+        Vadavalli, Coimbatore – 641041<br>
+        PN Pudur, Coimbatore<br>
+        Tamil Nadu, India<br>
+        <a href="tel:+919751997528" style="color:var(--green)">97519 97528</a> · <a href="tel:+919943211176" style="color:var(--green)">99432 11176</a>
+      </div>
+    </div>
+    <div>
+      <div class="about-fact">
+        <h4>Practical, project-first teaching</h4>
+        <p>Every concept is paired with a hands-on build — from wiring a first circuit to training a first model — so learners apply knowledge in real-world scenarios, not just slides.</p>
+      </div>
+      <div class="about-fact">
+        <h4>For every stage of the journey</h4>
+        <p>Programs are structured for school students, college students and working professionals alike, with beginner through advanced tracks in robotics, AI and IT fundamentals.</p>
+      </div>
+      <div class="about-fact">
+        <h4>Local roots, industry-relevant skills</h4>
+        <p>Based in Vadavalli, Coimbatore, we're accessible to families and learners across the city while keeping our curriculum aligned with current industry tools and practices.</p>
+      </div>
+      <div class="about-fact">
+        <h4>Confidence through mentorship</h4>
+        <p>Small-group mentoring helps learners build the analytical thinking and confidence to take on their own robotics and AI projects independently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= COURSES ======================= -->
+<section class="section section--alt" id="courses">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Courses Offered</span>
+      <h2>Eight programs. Three tracks. One goal — build real things.</h2>
+      <p>Filter by track below, or browse all eight programs. Every course runs a 20-hour Explorer level and a 40-hour Innovator level, with certificates offered on completion.</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn is-active" data-filter="all">All Courses</button>
+      <button class="filter-btn" data-filter="robotics">Robotics</button>
+      <button class="filter-btn" data-filter="ai">Artificial Intelligence</button>
+      <button class="filter-btn" data-filter="it">IT Crash Courses</button>
+    </div>
+
+    <div class="course-grid" id="courseGrid">
+
+      <!-- COURSE CARD: ROBOTICS -->
+      <article class="course-card" data-category="robotics">
+        <button class="course-poster" data-poster="images/course-robotics.webp" data-alt="Robotics Explorers & Innovators Lab poster" aria-label="View Robotics poster">
+          <span class="tag">Robotics</span>
+          <img src="images/course-robotics.webp" alt="Robotics Explorers & Innovators Lab course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Robotics Explorers &amp; Innovators Lab</h3>
+          <p>From simple circuits to Arduino-based builds and full automation projects — a hands-on robotics track that scales with the student.</p>
+          <div class="price-row">
+            <span class="price-pill">Innovators · ₹3,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">Explorer · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Class 3–5: Circuits &amp; block coding</li>
+            <li>Class 6–8: Arduino &amp; sensors</li>
+            <li>Class 9–10: Automation projects</li>
+            <li>Class 11–12: AI + IoT robotics</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>Class 3–12</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: AI -->
+      <article class="course-card" data-category="ai">
+        <button class="course-poster" data-poster="images/course-ai.webp" data-alt="Artificial Intelligence & Machine Learning poster" aria-label="View AI poster">
+          <span class="tag">Artificial Intelligence</span>
+          <img src="images/course-ai.webp" alt="Artificial Intelligence & Machine Learning course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Artificial Intelligence &amp; Machine Learning</h3>
+          <p>A four-level path from everyday AI awareness through to deep learning, generative AI and agentic AI applications.</p>
+          <div class="price-row">
+            <span class="price-pill">AI Innovators · ₹7,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">AI Explorers · ₹3,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Foundation: AI in daily life</li>
+            <li>Beginner: AI types &amp; chatbots</li>
+            <li>Intermediate: Data handling, NLP</li>
+            <li>Advanced: Deep &amp; generative AI</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>All Levels</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: CYBERSECURITY -->
+      <article class="course-card" data-category="it">
+        <button class="course-poster" data-poster="images/course-cybersecurity.webp" data-alt="Cyber Defense & Security Lab poster" aria-label="View Cybersecurity poster">
+          <span class="tag">IT Crash Course</span>
+          <img src="images/course-cybersecurity.webp" alt="Cyber Defense & Security Lab course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Cyber Defense &amp; Security Lab</h3>
+          <p>Practical cyber-safety through to professional-grade concepts — threats, networking, ethical hacking, forensics and cloud security.</p>
+          <div class="price-row">
+            <span class="price-pill">Innovators · ₹3,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">Explorers · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Foundation: Threats &amp; social media safety</li>
+            <li>Beginner: Networking, phishing</li>
+            <li>Intermediate: Ethical hacking</li>
+            <li>Advanced: Forensics, cloud security</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>All Levels</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: EXCEL / DATA -->
+      <article class="course-card" data-category="it">
+        <button class="course-poster" data-poster="images/course-excel.webp" data-alt="Digital Data Explorers Lab poster" aria-label="View Excel & Data poster">
+          <span class="tag">IT Crash Course</span>
+          <img src="images/course-excel.webp" alt="Digital Data Explorers Lab course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Digital Data Explorers Lab</h3>
+          <p>Excel and data-analysis skills from first spreadsheet through to dashboards, automation and real-world reporting.</p>
+          <div class="price-row">
+            <span class="price-pill">Data Innovators · ₹3,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">Excel Explorers · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Class 3–5: Excel basics &amp; entry</li>
+            <li>Class 6–8: Formulas &amp; charts</li>
+            <li>Class 9–10: Data analysis, reports</li>
+            <li>Class 11–12: Dashboards &amp; automation</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>Class 3–12</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: IOT -->
+      <article class="course-card" data-category="it">
+        <button class="course-poster" data-poster="images/course-iot.webp" data-alt="Internet of Things Lab poster" aria-label="View IoT poster">
+          <span class="tag">IT Crash Course</span>
+          <img src="images/course-iot.webp" alt="Internet of Things Lab course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Internet of Things Lab</h3>
+          <p>Sensors, microcontrollers, Wi-Fi modules and cloud platforms — building toward real IoT architecture and security.</p>
+          <div class="price-row">
+            <span class="price-pill">Innovators · ₹3,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">Explorers · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Foundation: Sensors &amp; automation intro</li>
+            <li>Beginner: Microcontrollers, actuators</li>
+            <li>Intermediate: Python, Wi-Fi, cloud</li>
+            <li>Advanced: IoT architecture, security</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>All Levels</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: MS TOOLS -->
+      <article class="course-card" data-category="it">
+        <button class="course-poster" data-poster="images/course-mstools.webp" data-alt="MS Tools Masters & Productivity Lab poster" aria-label="View MS Tools poster">
+          <span class="tag">IT Crash Course</span>
+          <img src="images/course-mstools.webp" alt="MS Tools Masters & Productivity Lab course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>MS Tools Masters &amp; Productivity Lab</h3>
+          <p>Word, Excel, PowerPoint and Paint — from first typing lesson to mail merge, pivot tables and infographics.</p>
+          <div class="price-row">
+            <span class="price-pill">Innovators · ₹3,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">Explorers · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Class 3–5: Typing, Paint, slides</li>
+            <li>Class 6–8: Word &amp; Excel formatting</li>
+            <li>Class 9–10: Document &amp; chart design</li>
+            <li>Class 11–12: Mail merge, pivot tables</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>Class 3–12</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: PYTHON / CODE CRAFTERS -->
+      <article class="course-card" data-category="it">
+        <button class="course-poster" data-poster="images/course-python.webp" data-alt="Code Crafters Lab poster" aria-label="View Python / Code Crafters poster">
+          <span class="tag">IT Crash Course</span>
+          <img src="images/course-python.webp" alt="Code Crafters Lab course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Code Crafters Lab</h3>
+          <p>Python programming from first lines of code through to web development and AI programming.</p>
+          <div class="price-row">
+            <span class="price-pill">Code Innovators · ₹3,999 / 40 hrs</span>
+            <span class="price-pill price-pill--alt">Code Explorers · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Class 6: Programming basics</li>
+            <li>Class 7–8: Logic, loops, lists</li>
+            <li>Class 9–10: Functions, file handling</li>
+            <li>Class 11–12: Web dev, AI programming</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>Class 6–12</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- COURSE CARD: SCRATCH -->
+      <article class="course-card" data-category="it">
+        <button class="course-poster" data-poster="images/course-scratch.webp" data-alt="Imagination Coders Lab poster" aria-label="View Scratch poster">
+          <span class="tag">IT Crash Course</span>
+          <img src="images/course-scratch.webp" alt="Imagination Coders Lab (Scratch) course poster" loading="lazy">
+          <span class="poster-zoom">🔍 View poster</span>
+        </button>
+        <div class="course-body">
+          <h3>Imagination Coders Lab (Scratch)</h3>
+          <p>Visual block-based coding for young learners — from sprites and stages through to full game development.</p>
+          <div class="price-row">
+            <span class="price-pill">Scratch Explorers · ₹1,999 / 20 hrs</span>
+          </div>
+          <ul class="course-sub">
+            <li>Exploration: Sprites, stage, blocks</li>
+            <li>Elementary: Events &amp; interaction</li>
+            <li>Intermediate: Variables &amp; conditions</li>
+            <li>Advanced: Game development</li>
+          </ul>
+          <div class="course-meta">
+            <span><i class="dot"></i>Young Learners</span>
+            <span><i class="dot"></i>Certificate Offered</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================= POSTER LIGHTBOX ======================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close poster view">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+
+<!-- ======================= TESTIMONIALS ======================= -->
+<section class="section section--alt" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Student Testimonials</span>
+      <h2>What learners say about training here.</h2>
+    </div>
+
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>“The AutoCAD training gave me real, practical knowledge and worthwhile teaching — it built my confidence and belief in my future work.”</blockquote>
+        <div class="testi-foot">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Student Review</div>
+            <div class="testi-role">Google Business Profile</div>
+          </div>
+          <span class="testi-badge">Verified</span>
+        </div>
+      </div>
+
+    <div class="testi-controls">
+      <button id="testiPrev" aria-label="Previous testimonials">‹</button>
+      <button id="testiNext" aria-label="Next testimonials">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACT ======================= -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2>Come build with us.</h2>
+      <p>Have a question about a course, batch timing or fees? Reach out — we typically respond within one business day.</p>
+
+      <div class="contact-info-item">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div>
+          <h4>Campus Locations</h4>
+          <p>Vadavalli, Coimbatore – 641041<br>PN Pudur, Coimbatore</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6A2 2 0 0122 16.9z"/></svg></div>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+919751997528">97519 97528</a><br><a href="tel:+919943211176">99432 11176</a></p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></div>
+        <div>
+          <h4>Instagram</h4>
+          <p><a href="https://instagram.com/sparkboticsaihub" target="_blank" rel="noopener">@sparkboticsaihub</a></p>
+        </div>
+      </div>
+
+      <div class="map-box">
+        <!-- Replace with an embedded Google Map iframe using your Place ID -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.266733075728!2d76.9053607!3d11.018603099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85fa2b6303ac1%3A0xd4bd4c9d2b4d56ce!2sSPARKBOTICS%20AI%20HUB!5e0!3m2!1sen!2sin!4v1783094472958!5m2!1sen!2sin" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+
+    <form class="form" id="contactForm">
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="course">Course of interest</label>
+        <select id="course" name="course">
+          <option>Robotics Engineering</option>
+          <option>Applied Artificial Intelligence</option>
+          <option>IT Crash Courses</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what you'd like to learn..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Send Message →</button>
+      <p class="form-note">Sending this opens WhatsApp with your details pre-filled, addressed to Sparkbotics AI Hub — just hit send there to complete your enquiry.</p>
+      <div class="form-success" id="formSuccess">✓ Opening WhatsApp with your enquiry — send the message there to finish.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <a href="#top" class="brand"><img src="images/logo.png" alt="SparkBotics AI Hub" class="brand-logo brand-logo--footer"></a>
+      <p style="margin-top:16px;max-width:280px;font-size:.85rem;">A robotics, AI and STEM training institute in Vadavalli, Coimbatore, Tamil Nadu.</p>
+      <div class="socials" style="margin-top:20px;">
+        <a href="https://instagram.com/sparkboticsaihub" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="tel:+919751997528" aria-label="Call">☎</a>
+      </div>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Courses</h5>
+      <ul>
+        <li><a href="#courses">Robotics Lab</a></li>
+        <li><a href="#courses">AI &amp; Machine Learning</a></li>
+        <li><a href="#courses">IT Crash Courses</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="#contact">Vadavalli &amp; PN Pudur</a></li>
+        <li><a href="tel:+919751997528">97519 97528</a></li>
+        <li><a href="#contact">Get in touch →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Sparkbotics AI Hub. All rights reserved.</span>
+    <span>Built with a dark-mode, tech-forward design system.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
